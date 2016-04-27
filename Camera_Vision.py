@@ -49,15 +49,10 @@ if __name__ == '__main__':
     cam.start()
     time.sleep(3)
     img = cam.get_image()
-    
+
     import pygame.image
     pygame.image.save(img, name)
     #print(os.path.abspath(name))
     pygame.camera.quit()
     main(name)
-    """parser = argparse.ArgumentParser()
-    parser.add_argument(
-        'image_file', help='The image you\'d like to label.')
-    args = parser.parse_args()
-    main(args.image_file)
-"""
+    
